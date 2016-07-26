@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/main.css" />
     <script>
     // added this to get the page to hide the toolbar on a browser on an Android phone
-      window.scrollTo(0,1)
+      function snapToTop() {
+        window.scrollTo(0,1);
+      }
     </script>
   </head>
-  <body>
+  <body onload="snapToTop();">
     <div class="page">
 
       <img src="img/screen-1a-01.png">
